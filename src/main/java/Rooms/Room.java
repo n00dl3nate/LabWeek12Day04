@@ -13,4 +13,6 @@ public abstract class Room {
     public IObject getObject() {
         return object;
     }
+
+
 }

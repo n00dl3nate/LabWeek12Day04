@@ -5,6 +5,7 @@ import Player.Tank;
 import Player.Mage;
 import Player.Healer;
 import Potions.Potion;
+import Rooms.TreasureRoom;
 import Spells.Spell;
 import Weapons.Weapon;
 import org.junit.Before;
@@ -21,18 +22,29 @@ public class PlayerTest {
     Healer healer;
 
     Armour armour;
+    Armour dragonArmour;
+
     Potion healPotion;
     Potion attackPotion;
     Potion defencePotion;
     Weapon weapon;
+    Weapon sword;
+    Weapon mace;
     Pet pet;
     Spell fireball;
+
+    TreasureRoom treasureRoom;
 
     @Before
     public void before(){
         ArrayList<Potion> potions = new ArrayList<>();
         armour = new Armour("Iron",6);
+        dragonArmour = new Armour("Dragon Armour",7);
         weapon = new Weapon("Axe",10);
+        sword = new Weapon("Sword", 12);
+        mace = new Weapon("Mace",4);
+
+
         healPotion = new Potion("Heal", 25);
         attackPotion = new Potion("Attack", 2);
         defencePotion = new Potion("Defence", 2);
@@ -46,6 +58,10 @@ public class PlayerTest {
         tank = new Tank("Knight",weapon,armour);
         mage = new Mage("Wizard",fireball,pet);
         healer = new Healer("Cleric",potions);
+
+        treasureRoom = new TreasureRoom(fireball,86);
+
+
     }
 
 
@@ -118,6 +134,38 @@ public class PlayerTest {
         String result = healer.useDefencePotion(2, tank);
         assertEquals(11, tank.totalDefence());
         assertEquals("Knight Gained 4 Defence Points", result);
+    }
+
+    @Test
+    public void tankCanPickUpTreasure(){
+        tank.pickUpGold(treasureRoom);
+        assertEquals(86, tank.getTreasure());
+    }
+
+    @Test
+    public void tankPickUpBetterWeapon(){
+        String result = tank.PickUpIObject(sword);
+        assertEquals(sword,tank.getWeapon());
+        assertEquals("Sword Has Been Set As Your New Weapon",result);
+    }
+
+    @Test
+    public void tankPickUpBetterArmour(){
+        String result = tank.PickUpIObject(dragonArmour);
+        assertEquals(dragonArmour,tank.getArmour());
+        assertEquals("Dragon Armour Has Been Set As Your New Armour",result);
+    }
+
+    @Test
+    public void tankPickUpWorseWeapon(){
+        String result = tank.PickUpIObject(mace);
+        assertEquals(weapon,tank.getWeapon());
+        assertEquals("Your Current Weapon is More PowerFul",result);
+    }
+
+    @Test
+    public void tankPickUpWorseArmour(){
+        S
     }
 
 

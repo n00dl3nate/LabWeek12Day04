@@ -1,6 +1,8 @@
 package Player;
 
+import Interfaces.IObject;
 import Potions.Potion;
+import Spells.Spell;
 
 import java.util.ArrayList;
 
@@ -82,6 +84,16 @@ public class Healer extends Player{
         }
         return "Not Enough Doses";
     }
+
+    public String PickUpIObject(IObject item){
+        if(item instanceof Potion){
+            this.potions.add((Potion) item);
+            return ((Potion) item).getType() + "Has Been Collected:";
+        }
+        return "You Can Not Use This Item";
+    }
+
+
 
 
 

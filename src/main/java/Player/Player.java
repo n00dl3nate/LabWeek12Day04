@@ -1,6 +1,7 @@
 package Player;
 
 import Rooms.Room;
+import Rooms.TreasureRoom;
 
 public abstract class Player {
 
@@ -57,4 +58,13 @@ public abstract class Player {
     public void collectTreasure(Room room){
 
     }
+
+    public String pickUpGold(TreasureRoom room){
+        int gold = room.getGold();
+        this.setTreasure(this.getTreasure() + gold);
+        room.setGold(0);
+        return this.getType() + "Picked Up " + gold + " Gold!";
+    }
+
+
 }

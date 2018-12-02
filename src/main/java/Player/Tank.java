@@ -1,7 +1,11 @@
 package Player;
 
 import Armour.Armour;
+import Interfaces.IObject;
+import Spells.Spell;
 import Weapons.Weapon;
+
+import java.util.ArrayList;
 
 public class Tank extends Player {
 
@@ -40,5 +44,25 @@ public class Tank extends Player {
 
     public void setDefence(int defence) {
         this.defence = defence;
+    }
+
+    public String PickUpIObject(IObject item){
+        if(item instanceof Weapon && ((Weapon) item).getAttack() > this.weapon.getAttack()){
+            setWeapon(((Weapon)item));
+            return ((Weapon) item).getType() + " Has Been Set As Your New Weapon";
+        }
+        if(item instanceof Weapon){
+            return "Your Current Weapon is More PowerFul";
+        }
+        if(item instanceof Armour && ((Armour) item).getDefence() > this.armour.getDefence()){
+            setArmour((Armour) item);
+            return ((Armour) item).getType() + " Has Been Set As Your New Armour";
+        }
+        if(item instanceof Armour){
+            return "Your Current Armour Is Better!";
+        }
+        else{
+            return "You Can Not Use This Item";
+        }
     }
 }

@@ -23,6 +23,7 @@ public class PlayerTest {
 
     Armour armour;
     Armour dragonArmour;
+    Armour leatherArmour;
 
     Potion healPotion;
     Potion attackPotion;
@@ -31,7 +32,10 @@ public class PlayerTest {
     Weapon sword;
     Weapon mace;
     Pet pet;
+
     Spell fireball;
+    Spell iceBlast;
+    Spell windBlast;
 
     TreasureRoom treasureRoom;
 
@@ -43,6 +47,7 @@ public class PlayerTest {
         weapon = new Weapon("Axe",10);
         sword = new Weapon("Sword", 12);
         mace = new Weapon("Mace",4);
+        leatherArmour = new Armour("Leather Armour",2);
 
 
         healPotion = new Potion("Heal", 25);
@@ -54,6 +59,9 @@ public class PlayerTest {
 
         pet = new Pet(50,"Dragon",6,6);
         fireball = new Spell("FireBall",10);
+        windBlast = new Spell("Wind Blast", 4);
+        iceBlast = new Spell("Ice Blast", 12);
+
 
         tank = new Tank("Knight",weapon,armour);
         mage = new Mage("Wizard",fireball,pet);
@@ -165,8 +173,42 @@ public class PlayerTest {
 
     @Test
     public void tankPickUpWorseArmour(){
-        S
+        String result = tank.PickUpIObject(leatherArmour);
+        assertEquals(armour,tank.getArmour());
+        assertEquals("Your Current Armour Is Better!",result);
     }
+
+    @Test
+    public void tankPickUpNonEquipableItem(){
+        String result = tank.PickUpIObject(fireball);
+        assertEquals(armour,tank.getArmour());
+        assertEquals(weapon,tank.getWeapon());
+        assertEquals("You Can Not Use This Item",result);
+    }
+
+    @Test
+    public void magePickupBetterSpell(){
+        String result = mage.PickUpIObject(iceBlast);
+        assertEquals(iceBlast,mage.getSpell());
+        assertEquals("Ice Blast Has Been Set As Your New Spell!",result);
+    }
+
+    @Test
+    public void magePickupWorseSpell(){
+        String result = mage.PickUpIObject(windBlast);
+        assertEquals(fireball,mage.getSpell());
+        assertEquals("Your current Spell is More PowerFull",result);
+    }
+
+    @Test
+    public void magePickupNonEquipableItem(){
+        String result = mage.PickUpIObject(sword);
+        assertEquals(fireball,mage.getSpell());
+        assertEquals("You Can Not Use This Item",result);
+    }
+
+    @Test
+    public void healerCanPickUp
 
 
 

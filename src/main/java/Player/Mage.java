@@ -46,7 +46,7 @@ public class Mage extends Player{
     public String PickUpIObject(IObject item){
         if(item instanceof Spell && ((Spell) item).getDamage() > this.spell.getDamage()){
             setSpell(((Spell)item));
-            return ((Spell) item).getType() + "Has Been Set As Your New Spell!";
+            return ((Spell) item).getType() + " Has Been Set As Your New Spell!";
         }
         if(item instanceof Spell){
             return "Your current Spell is More PowerFull";

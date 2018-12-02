@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="714bcc02-569b-48ee-b0fb-98cd137bb8ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/IFight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player/Healer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player/Healer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Player/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player/Mage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player/Tank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Rooms/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Rooms/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Rooms/TreasureRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Rooms/TreasureRoom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlayerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,23 +29,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="82" />
+          <entry key="java" value="83" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="82" />
+          <entry key="JAVA" value="83" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="11" />
-          <entry key="java" value="9309" />
+          <entry key="java" value="10043" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9309" />
+          <entry key="JAVA" value="10043" />
           <entry key="PLAIN_TEXT" value="11" />
         </counts>
       </usages-collector>
@@ -65,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/PlayerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="167" column="9" selection-start-line="167" selection-start-column="9" selection-end-line="167" selection-end-column="9" />
+            <state relative-caret-position="480">
+              <caret line="210" column="31" selection-start-line="210" selection-start-column="31" selection-end-line="210" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,22 +66,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Player/Tank.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Player/Mage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="61" column="52" lean-forward="true" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
+            <state relative-caret-position="367">
+              <caret line="54" column="19" lean-forward="true" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#330#331#0" expanded="true" />
-                <element signature="e#359#360#0" expanded="true" />
-                <element signature="e#403#404#0" expanded="true" />
-                <element signature="e#439#440#0" expanded="true" />
-                <element signature="e#472#473#0" expanded="true" />
-                <element signature="e#501#502#0" expanded="true" />
-                <element signature="e#612#613#0" expanded="true" />
-                <element signature="e#672#673#0" expanded="true" />
-                <element signature="e#809#810#0" expanded="true" />
-                <element signature="e#847#848#0" expanded="true" />
+                <element signature="e#394#395#0" expanded="true" />
+                <element signature="e#428#429#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -422,9 +405,9 @@
         <option value="$PROJECT_DIR$/src/main/java/Player/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/Rooms/Room.java" />
         <option value="$PROJECT_DIR$/src/main/java/Rooms/TreasureRoom.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Player/Mage.java" />
         <option value="$PROJECT_DIR$/src/main/java/Player/Healer.java" />
         <option value="$PROJECT_DIR$/src/main/java/Player/Tank.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Player/Mage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PlayerTest.java" />
       </list>
     </option>
@@ -559,7 +542,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543778560899" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543779932883" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -578,22 +561,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PlayerTest.tankPickUpWorseWeapon">
-    <configuration name="GameTest.canGetRandomRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FantasyGame__test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GameTest" />
-      <option name="METHOD_NAME" value="canGetRandomRoom" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PlayerTest.tankCanPickUpTreasure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PlayerTest.magePickupBetterSpell">
+    <configuration name="PlayerTest.magePickupBetterSpell" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyGame__test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PlayerTest" />
-      <option name="METHOD_NAME" value="tankCanPickUpTreasure" />
+      <option name="METHOD_NAME" value="magePickupBetterSpell" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -609,11 +582,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayerTest.tankPickUpBetterWeapon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlayerTest.tankPickUpNonEquipableItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyGame__test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PlayerTest" />
-      <option name="METHOD_NAME" value="tankPickUpBetterWeapon" />
+      <option name="METHOD_NAME" value="tankPickUpNonEquipableItem" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTest.tankPickUpWorseArmour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FantasyGame__test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PlayerTest" />
+      <option name="METHOD_NAME" value="tankPickUpWorseArmour" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -630,19 +613,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.GameTest.canGetRandomRoom" />
-      <item itemvalue="JUnit.PlayerTest.tankCanPickUpTreasure" />
-      <item itemvalue="JUnit.PlayerTest.tankPickUpBetterWeapon" />
       <item itemvalue="JUnit.PlayerTest.tankPickUpBetterArmour" />
       <item itemvalue="JUnit.PlayerTest.tankPickUpWorseWeapon" />
+      <item itemvalue="JUnit.PlayerTest.tankPickUpNonEquipableItem" />
+      <item itemvalue="JUnit.PlayerTest.tankPickUpWorseArmour" />
+      <item itemvalue="JUnit.PlayerTest.magePickupBetterSpell" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PlayerTest.magePickupBetterSpell" />
+        <item itemvalue="JUnit.PlayerTest.tankPickUpWorseArmour" />
+        <item itemvalue="JUnit.PlayerTest.tankPickUpNonEquipableItem" />
         <item itemvalue="JUnit.PlayerTest.tankPickUpWorseWeapon" />
         <item itemvalue="JUnit.PlayerTest.tankPickUpBetterArmour" />
-        <item itemvalue="JUnit.PlayerTest.tankPickUpBetterWeapon" />
-        <item itemvalue="JUnit.PlayerTest.tankCanPickUpTreasure" />
-        <item itemvalue="JUnit.GameTest.canGetRandomRoom" />
       </list>
     </recent_temporary>
   </component>
@@ -660,18 +643,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PlayerTest_tankPickUpBetterArmour - 2018.12.02 at 19h 17m 48s.xml">
-      <configuration name="PlayerTest.tankPickUpBetterArmour" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PlayerTest_tankPickUpBetterWeapon - 2018.12.02 at 19h 18m 14s.xml">
-      <configuration name="PlayerTest.tankPickUpBetterWeapon" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PlayerTest_tankPickUpBetterArmour - 2018.12.02 at 19h 18m 17s.xml">
-      <configuration name="PlayerTest.tankPickUpBetterArmour" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PlayerTest_tankPickUpWorseWeapon - 2018.12.02 at 19h 20m 40s.xml">
-      <configuration name="PlayerTest.tankPickUpWorseWeapon" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PlayerTest_tankPickUpWorseWeapon - 2018.12.02 at 19h 20m 59s.xml">
       <configuration name="PlayerTest.tankPickUpWorseWeapon" configurationId="JUnit" />
     </history-entry>
@@ -689,6 +660,18 @@
     </history-entry>
     <history-entry file="PlayerTest_tankPickUpWorseWeapon - 2018.12.02 at 19h 22m 42s.xml">
       <configuration name="PlayerTest.tankPickUpWorseWeapon" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PlayerTest_tankPickUpNonEquipableItem - 2018.12.02 at 19h 33m 31s.xml">
+      <configuration name="PlayerTest.tankPickUpNonEquipableItem" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PlayerTest_tankPickUpWorseArmour - 2018.12.02 at 19h 33m 36s.xml">
+      <configuration name="PlayerTest.tankPickUpWorseArmour" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PlayerTest_tankPickUpWorseArmour - 2018.12.02 at 19h 33m 40s.xml">
+      <configuration name="PlayerTest.tankPickUpWorseArmour" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PlayerTest_magePickupBetterSpell - 2018.12.02 at 19h 42m 28s.xml">
+      <configuration name="PlayerTest.magePickupBetterSpell" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -1065,30 +1048,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Player/Mage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="54" column="19" lean-forward="true" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Player/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -1133,8 +1092,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Player/Tank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="61" column="52" lean-forward="true" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
+        <state relative-caret-position="360">
+          <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#330#331#0" expanded="true" />
@@ -1151,10 +1110,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Player/Mage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="54" column="19" lean-forward="true" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PlayerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="167" column="9" selection-start-line="167" selection-start-column="9" selection-end-line="167" selection-end-column="9" />
+        <state relative-caret-position="480">
+          <caret line="210" column="31" selection-start-line="210" selection-start-column="31" selection-end-line="210" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
